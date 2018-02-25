@@ -1,5 +1,5 @@
 #HSLIDE
-## Pattern Matching And Control Flow
+## Pattern matching и управляващи оператори
 ![Image-Absolute](assets/basics.jpg)
 
 #HSLIDE
@@ -7,8 +7,6 @@
 
  * Правим си проекти с mix
  * Програмите ни са модули, които съдържат функции
- * Основни типове
-
 
 #HSLIDE
 ## Основни типове
@@ -321,7 +319,7 @@ x = 5
 ```
 
 #HSLIDE
-#### Засега за `match operator`-а знаем:
+Засега за `match operator`-а знаем:
 1. С него могат да се дефинират променливи.
 2. С него могат да се правят проверки - дали дадена променлива има дадена стойност.
 
@@ -457,9 +455,6 @@ defmodule Questionnaire do
     end
   end
 end
-
-Questionnaire.how_old_are_you?(33)
-#=> "Имаме си чичко или леличка"
 ```
 
 #HSLIDE
@@ -467,7 +462,7 @@ Questionnaire.how_old_are_you?(33)
 * Но има и още една, още по-ненужна - unless. <!-- .element: class="fragment" -->
 
 #HSLIDE
-* Стойността на `if` или на `unless` е стойността на израза, който се оценява.
+Стойността на `if` или на `unless` е стойността на израза, който се оценява.
 
 ```elixir
 age = 34
@@ -505,13 +500,6 @@ defmodule FizzBuzz do
     end
   end
 end
-
-FizzBuzz.of(17)
-# [
-#    1, 2, "Fizz", 4, "Buzz", "Fizz",
-#    7, 8, "Fizz", "Buzz", 11, "Fizz",
-#    13, 14, "FizzBuzz", 16, 17
-# ]
 ```
 
 #HSLIDE
@@ -550,11 +538,6 @@ defmodule Questionnaire do
     end
   end
 end
-
-Questionnaire.asl(25, :female, "Ямбол")
-#=> "25, F, Ямбол"
-Questionnaire.asl(15, :male, "Софията, братле")
-#=> "15, М, Софията, братле"
 ```
 
 #HSLIDE
